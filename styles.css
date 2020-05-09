@@ -49,7 +49,6 @@ h1 {
 /*---------- header -----------*/
 .header{
 	background-color: #17252a;
-	background-image: linear-gradient(rgba(23,37,42, 0.8), rgba(23,37,42, 0.8)), url(images/wa.png);
 	background-size: cover;
 	background-position: center;
 	color: white;
@@ -173,7 +172,7 @@ h1 {
 
 /* cards and bars */
 .container2-card {
-	width: 19%;
+	width: 24%;
 	height: auto;
 	background: white;
 	color:black;
@@ -230,15 +229,15 @@ h1 {
 	border-radius: 10px;
 }
 
-.Database {
-	width: 80%; 
+.Python {
+	width: 50%; 
 	background: #17252a; 
 	height: 5px;
 	border-radius: 10px;
 }
 
-.Agile {
-	width: 70%; 
+.Docker {
+	width: 50%; 
 	background: #17252a; 
 	height: 5px;
 	border-radius: 10px;
@@ -563,18 +562,6 @@ h1 {
 	color:white;
 }
 .fa-instagram:hover {
-	transform: scale(1.50);
-	transition-duration: 0.4s;
-}
-
-.fa-youtube-play {
-	padding:10px 6px;
-	margin:10px;
-	transition: .5s;
-	text-decoration: none;
-	color:white;
-}
-.fa-youtube-play:hover {
 	transform: scale(1.50);
 	transition-duration: 0.4s;
 }
