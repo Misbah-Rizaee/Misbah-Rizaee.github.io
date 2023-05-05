@@ -8,22 +8,54 @@
 
 body {
 	font-family: "Karla", Helvetica, Arial, sans-serif;
-	font-size:18px;
 	margin:0;
 	color:black; 
 	text-align:center;
 }
 
+:root {
+  --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
+  --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
+  --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+  --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+  --step-2: clamp(1.62rem, calc(1.50rem + 0.58vw), 1.95rem);
+  --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
+  --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
+  --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
+}
+
+h1 {
+	font-size: var(--step-5);
+}
+
+h2 {
+	font-size: var(--step-4);
+}
+
+h3 {
+	font-size: var(--step-3);
+}
+
+h4 {
+	font-size: var(--step-2);
+}
+
+h5 {
+	font-size: var(--step-1);
+}
+
+h6 {
+	font-size: var(--step-0);
+}
+
 p {
+	font-size: var(--step--1);
 	margin:20px;
-	font-size: 15px;
 	line-height: 1.5em;
 }
 
-@media screen and (max-width: 600px) {
-	p {
-		font-size: 12px;
-	}
+a {
+	font-size: var(--step--2);
 }
 
 .special-paragraphs {
@@ -38,25 +70,6 @@ p {
 	}
 }
 
-h1 {
-	font-size: 40px;
-	letter-spacing: 1.4px;
-	word-spacing: .2rem;
-	text-transform: uppercase;
-	color: inherit;
-}
-
-@media only screen and (max-width: 1010px) {
-	h1 {
-		font-size: 30px;
-	  }
-}
-
-@media screen and (max-width: 600px) {
-	h1 {
-		font-size: 20px;
-	}
-}
 
 /*---------- header -----------*/
 .header{
@@ -83,7 +96,7 @@ h1 {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	text-decoration: none;
-	font-size: 15px;
+	font-size: var(--step--1);
 	transition: 0.4s;
 	color: white;
 }
@@ -102,9 +115,6 @@ h1 {
 	.topnav a.icon {
 		float: right;
 		display: block;
-	}
-	.topnav a {
-		font-size: 20px;
 	}
 }
 
@@ -125,7 +135,7 @@ h1 {
 .sidenav a {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: var(--step-2);
 	display: block;
 	transition: 0.3s;
 	text-align: center;
@@ -140,7 +150,7 @@ h1 {
 	position: absolute;
 	top: 0;
 	right: 25px;
-	font-size: 36px;
+	font-size: var(--step-2);
 	margin-left: 50px;
 }
 
@@ -216,7 +226,6 @@ h1 {
 .skill-bar {
 	text-align: left;
 }
-
 
 .bars {
 	width: 100%;
@@ -306,7 +315,7 @@ h1 {
 .container3-icon i {
 	line-height: 70px;
 	transform: rotate(-45deg);
-	font-size: 26px;
+	font-size: var(--step-0);
 }
 
 .container3-icon:hover {
@@ -315,7 +324,7 @@ h1 {
 	transition-duration: 0.4s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1010px) {
 	.container3-card {
 		max-width: 80%;
 	}
@@ -363,8 +372,6 @@ h1 {
 	width:100%;
 	height:auto; 
 }
-
-.container4-column
 
 
 /*---------- container4-scroll fade -----------*/
@@ -457,7 +464,7 @@ h1 {
 	background: white;
 	color: #17252a;
 	line-height: 100px;
-	font-size: 55px;
+	font-size: var(--step-2);
 }
 
 
@@ -468,7 +475,6 @@ h1 {
 	color: black;
 	padding: 15px 32px;
 	text-decoration: none;
-	font-size: 16px;
 	cursor: pointer;
 	transition-duration: 0.4s;
 	margin-top:20px;
@@ -480,7 +486,6 @@ h1 {
 	background-color: #17252a;
 	transition-duration: 0.4s;
 }
-
 
 @media only screen and (max-width: 1010px) {
 	.container5-card {
@@ -508,7 +513,6 @@ h1 {
 	color: white;
 	padding: 15px 32px;
 	text-decoration: none;
-	font-size: 16px;
 	cursor: pointer;
 	transition-duration: 0.4s;
 	font-family: "Karla", Helvetica, Arial, sans-serif;
@@ -557,38 +561,41 @@ h1 {
 	margin: 0 auto; 
 }
 
-.container6-column-content a p:hover {
-	transform: scale(1.25);
-	transition-duration: 0.4s;
+.container6-column-content i {
+	font-size: var(--step-3);
 }
-
 
 /* icons */
 .fa-instagram {
+	font-size: var(--step-1);
 	padding:10px 6px;
 	margin:10px;
 	transition: .5s;
 	text-decoration: none;
 	color:white;
 }
+
 .fa-instagram:hover {
 	transform: scale(1.50);
 	transition-duration: 0.4s;
 }
 
 .fa-github {
+	font-size: var(--step-1);
 	padding:10px 6px;
 	margin:10px;
 	transition: .5s;
 	text-decoration: none;
 	color:white;
 }
+
 .fa-github:hover {
 	transform: scale(1.50);
 	transition-duration: 0.4s;
 }
 
 .fa-linkedin {
+	font-size: var(--step-1);
 	padding:10px 6px;
 	margin:10px;
 	transition: .5s;
@@ -600,18 +607,3 @@ h1 {
 	transform: scale(1.50);
 	transition-duration: 0.4s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
