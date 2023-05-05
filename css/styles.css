@@ -193,17 +193,22 @@ a {
 /* cards and bars */
 .container2-card {
 	width: 24%;
-	height: auto;
-	background: white;
-	color:black;
-	margin: 20px auto 0;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	margin: 20px auto 20px;
 	padding: 20px;
-	text-align: center;
-	display: flex;                   /* defines flexbox */
-	flex-direction: column;          /* top to bottom */
-	justify-content: space-between;  /* first item at start, last at end */
-	margin-bottom:20px;  
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	text-align: center; 
+}
+
+@media only screen and (max-width: 1510px) {
+	.container2-row {
+		width: 80%;
+	}
+	
+	.container2-card { 
+		margin-left:auto;
+		margin-right:auto;
+		width: 48%;
+	}
 }
 
 @media only screen and (max-width: 1010px) {
