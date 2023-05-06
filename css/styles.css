@@ -280,11 +280,11 @@ a {
 	background: #2b7a78;
 	padding-top:30px;
 	padding-bottom:30px;
+	width: 100%;
 }
 
 .inner-container3 {
-	width: 100%;
-	max-width: 1200px;
+	width: 95%;
 	margin: auto;
 	padding: 0 20px;
 	overflow: hidden;
@@ -511,23 +511,6 @@ a {
 	background-color: #17252a;
 }
 
-/* footer button */
-.footer-button {
-	background-color: Transparent;
-	border: 1px solid white;
-	color: white;
-	padding: 15px 32px;
-	text-decoration: none;
-	cursor: pointer;
-	transition-duration: 0.4s;
-	font-family: "Karla", Helvetica, Arial, sans-serif;
-}
-
-.footer-button:hover {
-	color: #17252a;
-	background-color: white;
-}
-
 
 /*---------- container6 -----------*/
 .container6 {
@@ -537,37 +520,43 @@ a {
 	flex-wrap: wrap; 
 }
 
-.container6-column {
-    width: 33%;
-	height: auto;
-	padding-top:30px;
-	padding-bottom:30px; 
-	color: black;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	align-items: center;
-}
-
-@media only screen and (max-width: 1010px) {
-	.container6-column { 
-		 display: block; 
-		 width: 100%;
-	}
-}
-
-.container6-column-content {
-	width:70%;
+.container6-content {
+	padding-bottom:30px;
+	width:50%;
 	margin: 0 auto; 
 }
 
-.container6-column-content i {
-	font-size: var(--step-3);
+
+/* contact form */
+.feedback-input {
+	color: white;
+	background-color: transparent;
+	border: 2px solid white;
+	padding: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+	outline: 0;
+	resize: none;
+}
+
+::placeholder{
+	color: white;
+}
+
+[type="submit"] {
+	width: 100%;
+	background-color: white;
+	border: 1px solid white;
+	cursor: pointer;
+	color: #17252a;
+	padding: 10px 0 10px;
+}
+
+[type="submit"]:hover {
+	color: white;
+	border: 1px solid white;
+	background-color: #17252a;
+	transition-duration: 0.4s;
 }
 
 /* icons */
