@@ -247,6 +247,7 @@ a {
 
 .container3-columns {
 	width: 33.33%;
+	padding-top: 30px;
 	text-align: center;
 }
 
@@ -258,8 +259,6 @@ a {
 	border: 1px solid white;
 	color: #2b7a78;
 	transform: rotate(45deg);
-	margin-bottom: 30px;
-	margin-top: 16px;
 }
 
 .container3-icon i {
