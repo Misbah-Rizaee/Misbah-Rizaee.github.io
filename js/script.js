@@ -33,9 +33,16 @@ function scrollColor() {
 	}
 }
 
+function submitForm() {
+  event.preventDefault(); // Prevent form submission
+  this.reset(); // Reset the form
+};
+
 window.onload = function(){ 
 window.addEventListener('scroll', scrollAppear);
 window.addEventListener('scroll', scrollColor);
 document.getElementById("mySidenav").onclick = function() {openNav()};
 document.getElementById("mySidenav").onclick = function() {closeNav()};
+
+document.getElementById('contactForm').addEventListener('submit', submitForm);
 };
