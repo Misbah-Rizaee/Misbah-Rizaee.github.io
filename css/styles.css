@@ -330,36 +330,36 @@ a {
 
 
 /*---------- container4-scroll fade -----------*/
-#left {
+.left {
 	opacity:0;
 	transform: translateX(20px);
 	transition: 0.6s all ease-in-out;
 }
 
-#left.showLeft {
+.left.showLeft {
 	opacity:1;
 	transform: translateX(0px);
 }
 
-#right {
+.right {
 	opacity:0;
 	transform: translateX(-20px);
 	transition: 0.6s all ease-in-out;
 }
 
-#right.showRight {
+.right.showRight {
 	opacity:1;
 	transform: translateX(0px);
 }
 
 @media only screen and (max-width: 1010px) {
-	#left {
+	.left {
 		opacity:0;
 		transform: translateY(20px);
 		transition: 0.6s all ease-in-out;
 	}
 
-	#right {
+	.right {
 		opacity:0;
 		transform: translateY(-20px);
 		transition: 0.6s all ease-in-out;

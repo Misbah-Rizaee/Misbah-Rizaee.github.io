@@ -1,17 +1,21 @@
 function scrollAppear() {
-  let left = document.querySelector('#left');
-  let right = document.querySelector('#right');
-  let position = left.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight / 1.5;
+	const rows = document.querySelectorAll('.container4-row'); // Select all rows
+	
+	rows.forEach((row) => {
+		const left = row.querySelector('.left');
+		const right = row.querySelector('.right');
+		const position = left.getBoundingClientRect().top;
+		const screenPosition = window.innerHeight / 1.5;
   
-  if(position < screenPosition) {
-    left.classList.add('showLeft');
-    right.classList.add('showRight');
-  }
-	else {
-		left.classList.remove('showLeft');
-		right.classList.remove('showRight');
-	}
+		if(position < screenPosition) {
+			left.classList.add('showLeft');
+			right.classList.add('showRight');
+		}
+		else {
+			left.classList.remove('showLeft');
+			right.classList.remove('showRight');
+		}
+	});
 }
 
 function openNav() {
