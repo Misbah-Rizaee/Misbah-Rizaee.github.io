@@ -400,9 +400,9 @@ a {
 
 /* Mywork button */
 .container5-button {
-	background-color: Transparent;
+	background-color: #17252a;
 	border: 1px solid #17252a;
-	color: #17252a;
+	color: white;
 	padding: 15px 32px;
 	text-decoration: none;
 	cursor: pointer;
@@ -412,8 +412,8 @@ a {
 }
 
 .container5-button:hover {
-	color: white;
-	background-color: #17252a;
+	color: #17252a;
+	background-color: white;
 	transition-duration: 0.4s;
 }
 
