@@ -369,7 +369,7 @@ a {
 
 /*---------- container5 -----------*/
 .container5 {
-	width:100%;
+	width: 100%;
 	height:auto;
 	padding-top:30px;
 	padding-bottom:30px;
@@ -377,39 +377,32 @@ a {
 	background-color: white;
 }
 
-.container5-column {
+.container5-row {
 	width: 90%;
-	margin:30px auto 30px auto;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	margin: auto;
+	margin-left:auto;
+	margin-right:auto;
 	display: flex;
-	height: auto;
+	flex-wrap: wrap;
 }
 
-.container5-columns-left {
-	width: 25%;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	background-color: #17252a;
-	color: white; 
+.container5-columns {
+	width: 33.33%;
+	padding-top: 30px;
+	text-align: center;
 }
 
-.container5-columns-right {
-	width: 75%; 
-	text-align: justify;
-	display:flex;
-	flex-direction: column; 
-	background-color: white;
+@media screen and (max-width: 1010px) {
+	.container5-columns {
+		width: 100%;
+	}
 }
 
 /* Mywork button */
 .container5-button {
 	background-color: Transparent;
-	border: 1px solid white;
-	color: white;
+	border: 1px solid #17252a;
+	color: #17252a;
 	padding: 15px 32px;
 	text-decoration: none;
 	cursor: pointer;
@@ -419,19 +412,9 @@ a {
 }
 
 .container5-button:hover {
-	color: #17252a;
-	background-color: white;
+	color: white;
+	background-color: #17252a;
 	transition-duration: 0.4s;
-}
-
-@media only screen and (max-width: 1010px) {
-	.container5-column {
-		display: inline-block;
-	}
-
-	.container5-columns-left, .container5-columns-right {
-		width:100%;
-	}
 }
 
 
