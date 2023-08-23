@@ -24,6 +24,11 @@ body {
   --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
 }
 
+/* Add -webkit-text-size-adjust property to adjust text size */
+h1, h2, h3, h4, h5, h6, p, a {
+  -webkit-text-size-adjust: 100%;
+}
+
 h1 {
 	font-size: var(--step-5);
 }
@@ -390,6 +395,9 @@ a {
 	width: 33.33%;
 	padding-top: 30px;
 	text-align: center;
+	display: flex; /* Use flexbox to align items vertically */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Align items with space between them */
 }
 
 @media screen and (max-width: 1010px) {
