@@ -335,9 +335,9 @@ a {
 
 /* HPE Logo */
 .green-rectangle {
-    width: 300px;
-    height: 80px; /* Adjust the height here */
-    border: 20px solid #01A982; /* Use the color #01A982 for the border */
+    width: 180px;
+    height: 60px; 
+    border: 12px solid #01A982; 
     position: relative;
 }
 
