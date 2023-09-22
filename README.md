@@ -8,5 +8,5 @@ As an aspiring professional seeking to establish my digital presence, I have met
 * FONT AWESOME 5
 
 ### Please Allow Me To Remind You That
-I would like to thank you for visiting my personal website, where I have detailed my professional experience, skills, and projects. All the content on this website, including text, images, and other media, is the exclusive property of Misbah Rizaee. If you have any questions or concerns about the content on this website or would like to obtain permission to use any of the materials, please do not hesitate to contact me. Thank you for your interest in my work.
+I would like to thank you for visiting my personal website, where I have detailed my professional experience, skills, and projects. All the content on this website, including projects, text, and other media, is the exclusive property of Misbah Rizaee. If you have any questions or concerns about the content on this website or would like to obtain permission to use any of the materials, please do not hesitate to contact me. Thank you for your interest in my work.
 
