@@ -1,0 +1,49 @@
+.mySkills {
+	background-color: white;
+	width: 100%;
+}
+
+/* container2 */
+.container2 {
+	width: 100%;
+	height: auto;
+	padding-top:30px;
+	padding-bottom:30px;
+	text-align: center;
+}
+
+.container2-row {
+	width: 90%;
+	height: auto;
+	margin-left:auto;
+	margin-right:auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container2-columns {
+	width: 25%;
+	margin: 20px auto 20px;
+	text-align: center; 
+}
+
+@media only screen and (max-width: 1510px) {
+	.container2-columns { 
+		margin-left:auto;
+		margin-right:auto;
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 1010px) {
+	.container2-columns { 
+		margin-left:auto;
+		margin-right:auto;
+		width: 100%;
+	}
+}
+
+.container2-columns:hover {
+	transform: scale(1.05); 
+	transition-duration: 0.4s;
+}

@@ -1,182 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">	
-		
-		<title>Misbah Rizaee</title>
-		<meta name="description" content="This is Misbah Rizaee's personal website!" />
-		<meta name="keywords" content="Misbah, Rizaee, .com, Ireland" />
-		<meta name="Author" content="Misbah Rizaee" />
+<head>
+    <meta charset="UTF-8">
+    <title>Misbah Rizaee</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="about"></div>
+    <div id="skills"></div>
+    <div id="otherSkills"></div>
+    <div id="experience"></div>
+    <div id="work"></div>
+    <div id="footer"></div>
 
-		<link rel="icon" type="image/png" href="img/icon.png" sizes="16x16" />
-		<link rel="icon" type="image/png" href="img/icon.png" sizes="32x32" />
+    <script>
+        // Load content dynamically
+        loadHTML("partials/header.html", "header");
+        loadHTML("partials/about.html", "about");
+        loadHTML("partials/skills.html", "skills");
+        loadHTML("partials/otherSkills.html", "otherSkills");
+        loadHTML("partials/experience.html", "experience");
+        loadHTML("partials/work.html", "work");
+        loadHTML("partials/footer.html", "footer");
 
-		<link rel="stylesheet" href="css/styles.css"/>
-		<script src="js/script.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	
-	<body>
-		<div class="header" id="AboutMe">
-			<div class="topnav" id="myTopnav">
-			  <a href="#" class="fa fa-home"></a>
-			  <a href="#AboutMe">About Me</a>
-			  <a href="#MySkills">My Skills</a>
-			  <a href="#MyWork">My Work</a>
-			  <a href="#contact">Contact Me</a>
-			  <a class="icon" onclick="openNav()"><i class='fa fa-bars'></i></a>
-			</div>
-			
-			<div id="mySidenav" class="sidenav">
-			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			  <a href="#AboutMe" onclick="closeNav()">About Me</a>
-			  <a href="#MySkills" onclick="closeNav()">My Skills</a>
-			  <a href="#MyWork" onclick="closeNav()">My Work</a>
-			  <a href="#contact" onclick="closeNav()">Contact Me</a>
-			</div>
-
-			<div class="container1">
-				<h4>About Me</h4>
-				<p class="special-paragraphs">My name is Misbah Rizaee, and I am delighted to introduce myself as a highly accomplished individual who has successfully earned a Master's degree in Computer Science from Trinity College Dublin, where I gained extensive knowledge and expertise in the field. As you browse through this website, you will discover comprehensive details about my background, qualifications, skills, and experience, which I am eager to share with you to showcase my dedication, hard work, and proficiency in the industry.</p>
-				<div class="container1-row">
-
-				</div>
-			</div>
-		</div>
-	
-		<div class="middle">	
-			<div class="container2" id="MySkills">
-				<h4>My Skills</h4>
-				<p class="special-paragraphs">My passion for programming has driven me to constantly seek out new challenges and opportunities to grow and expand my skill set. Whether working on a personal project or collaborating with a team on a large-scale enterprise solution. As a programmer, I have developed a wide range of skills, which I will outline below. </p>
-				<div class="container2-row">
-					<div class="container2-columns">
-						<h5>Java</h5>
-						<p style="text-align:justify;">I had the opportunity to work on a large-scale project at Ericsson that utilized the latest Java technologies, including Spring Boot, Docker, and Kubernetes. The project's goal was to provide a consistent set of APIs to handle large amounts of data for other Ericsson applications. As part of the project team, my responsibilities included contributing to the development of the application, ensuring its scalability and efficiency, and collaborating with other team members to achieve project milestones. Through my work on this project, I gained valuable experience in Java programming and modern development tools, as well as the ability to work on a complex project with a team of experts. The outcomes of the project were significant, resulting in improved efficiency and functionality for the Ericsson applications that relied on it. Overall, this experience highlighted my ability to deliver high-quality solutions to challenging problems and demonstrated my skills and experience in programming.</p>
-					</div>
-					
-					<div class="container2-columns">
-						<h5>Python</h5>
-						<p style="text-align:justify;">During my tenure at Ericsson, my main responsibility was the development of tests for both new and existing functionalities within my assigned project. The primary objective of these tests was to ensure the continuous stability and reliability of the service being constructed. To achieve this, close collaboration with fellow developers was crucial to comprehend the project requirements, functional specifications, and use cases. In the course of test development, I regularly executed the tests to promptly identify any potential issues or defects. Working hand-in-hand with the development team, I resolved these problems and ensured that the software functioned optimally and met expectations. Furthermore, I leveraged test automation tools and techniques to streamline the testing process and enhance efficiency. This experience provided me with invaluable skills in testing and quality assurance. It improved my ability to create and implement test plans, develop test cases, and automate testing procedures.</p>
-					</div>
-					
-					<div class="container2-columns">
-						<h5>Container Technology</h5>
-						<p style="text-align:justify;">During my internship at Ericsson, I had the opportunity to gain extensive hands-on experience working with container-based deployments, which involved utilizing a range of cutting-edge technologies such as Docker, Kubernetes, Linux, Bash, and Git. These tools and frameworks enabled me to to develop skills in managing  complex software deployments, collaborating with fellow developers through the utilization of version control tools like Git, and automating deployment processes through the creation and implementation of efficient Bash scripts. Through hands-on experience with these cutting-edge technologies, I not only gained a deep understanding of the challenges associated with containerization but also uncovered various opportunities it presents. The knowledge and skills I gained from this experience have provided me with a robust foundation in modern software development tools and techniques, which continue to serve as invaluable assets in my current role as a Java developer. </p>
-					</div>
-					
-					<div class="container2-columns">
-						<h5>Machine Learning</h5>
-						<p style="text-align:justify;">Throughout the course of my master's studies, I gained extensive experience and expertise in the fields of machine learning and natural language processing. I applied this knowledge to a variety of projects, including ones where I collected substantial volumes of Twitter data using Twitter's API, which I then pre-processed using state-of-the-art natural language processing libraries. To gain more comprehensive insights from the data, I utilized advanced statistical modelling techniques such as Latent Dirichlet Allocation (LDA), which enabled me to identify latent themes within the data and extract various topics from the tweets. By utilizing LDA topic modelling, I was able to uncover the underlying fundamental topics being discussed within the collection of tweets, providing me with a deeper understanding of the dataset. This project gave me an opportunity to hone my skills in machine learning and natural language processing, specifically in the context of Twitter data analysis, allowing me to develop a more comprehensive understanding of these fields.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class='container3'>
-				<h4>Other Skills</h4>
-				<div class='container3-row'>
-					<div class='container3-columns'>
-						<div class='container3-icon'>
-							<i class='fa fa-database'></i>
-						</div>
-						<h5>Database</h5>
-						<p style="text-align:justify;">As a software developer, I have had the opportunity to design and develop database scripts for a wide range of complex and challenging projects. This work has allowed me to build a deep understanding of the underlying principles and best practices of database management, and has given me a strong working knowledge of MySQL. In addition, I also have experience working with Amazon Web Services, including the use of RDS (Relational Database Service). This experience has given me a comprehensive understanding of the unique challenges and opportunities presented by cloud-based database management, and has allowed me to develop and refine a wide range of skills and techniques for optimizing performance, reliability, and scalability in cloud-based database environments.</p>
-					</div>
-
-					<div class='container3-columns'>
-						<div class='container3-icon'>
-							<i class='fa fa-code'></i>
-						</div>
-						<h5>Web Development</h5>
-						<p style="text-align:justify;">During my journey in web development, I started by learning the fundamentals of HTML and XML, before delving into the more complex aspects of CSS and JavaScript. As my knowledge and skills grew, I began to explore server-side development, which offered a new set of challenges and opportunities for learning. Through this experience, I have continued to expand my skillset, deepening my understanding of languages like PHP and Java, and learning to work with powerful frameworks like Spring and Hibernate.</p>
-					</div>
-
-					<div class='container3-columns'>
-						<div class='container3-icon'>
-							<i class='fa fa-bug'></i>
-						</div>
-						<h5>Agile Methodologies</h5>
-						<p style="text-align:justify;">Over the course of my career as a software developer, I have gained extensive experience with a range of Agile methodologies, including Scrum and Kanban, as well as various testing techniques. I am well-versed in the use of automated testing tools, such as JUnit. In addition to these technical skills, I have also developed a keen understanding of the importance of communication, collaboration, and teamwork in the context of Agile development. I am well-versed in the use of Agile project management tools, such as JIRA, which can help to streamline project workflows and improve the overall efficiency and effectiveness of the development process.</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="container4">
-				<h4>Experience</h4>
-				<div class="container4-row">
-					<div class="container4-columns left">
-						<div class="green-rectangle">
-							<div class="center-hole"></div>
-						</div>
-						<h5>Hewlett Packard Enterprise</h5>
-					</div>
-					<div class="container4-columns right">
-						<p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed semper sem. Nullam eros sem, elementum vel mattis vel, hendrerit non est. Cras pharetra mauris id felis facilisis tincidunt. Integer vitae dictum urna. Aenean mollis blandit quam eu porttitor. Fusce sit amet sapien in urna volutpat suscipit nec at diam. Cras euismod nibh nunc, at facilisis est ultricies dictum. Aenean vitae diam ac tortor porttitor commodo et in nisi. Nunc velit magna, tincidunt in quam et, sagittis volutpat tellus. Proin eget libero sit amet eros vestibulum tincidunt. Integer dictum, nunc at ullamcorper dapibus, felis lorem aliquet quam, nec aliquam turpis enim lobortis metus. In faucibus sit amet magna sed condimentum. Cras gravida nisi sit amet velit faucibus euismod. Nam facilisis lectus nec nunc pellentesque blandit. Ut vitae vestibulum velit. Vivamus rhoncus vestibulum laoreet. Nulla at bibendum ipsum, et placerat ex. Nullam non ipsum interdum, fringilla massa id, auctor quam. Aliquam sit amet nisl ut orci dapibus placerat at sed erat. In iaculis metus vel laoreet efficitur. Sed vel ullamcorper erat. In pulvinar id ante at ullamcorper. Nam malesuada quam at est pharetra auctor. Vivamus hendrerit aliquet rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eu mauris sed eros tempus posuere. Suspendisse porttitor tempus orci. In non nisl quis dui aliquet tincidunt. Sed tellus urna, rutrum sit amet est ac, rhoncus rhoncus est.</p>
-					</div>
-				</div>
-				<div class="container4-row">
-					<div class="container4-columns left">
-						<div class="horizontal-line"></div>
-						<div class="horizontal-line"></div>
-						<div class="horizontal-line"></div>
-						<h5>Ericsson</h5>
-					</div>
-					<div class="container4-columns right">
-						<p style="text-align:justify;">During my time as an intern at Ericsson, I had the opportunity to work with a leading global technology company that is focused on developing cutting-edge software, applications, and telecommunications services. The company has a strong emphasis on IoT and 5G technologies, which are shaping the future of communication and connectivity. Working in a team of 12 people for 8 months was an incredible learning experience that helped me grow both personally and professionally. As a team member, I was able to enhance my teamwork capabilities and improve my communication skills. Being a part of a team that consisted of both senior and junior software engineers who had years of experience was a great privilege. I was able to learn from their vast knowledge and expertise in the field, which helped me gain a deeper understanding of the intricacies involved in software development. Being an intern at Ericsson, I was given the opportunity to contribute to real-world projects that helped me develop my skills in designing and coding software applications. I worked on various projects that included building prototypes, testing software functionalities, and collaborating with my team to solve complex problems. It was fascinating to see how my contributions as an intern could positively impact the projects and the team.</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class='container5' id="MyWork">
-				<h4>My Work</h4>
-				<p class="special-paragraphs">If you are interested in seeing some of the projects I have worked on, feel free to check out my GitHub account, where you will find the source code for each one.</p>
-				<div class='container5-row'>
-					<div class='container5-columns'>
-						<div class="column-content">
-							<h5>The potential of LDA on social media</h5>
-							<p style="text-align:justify;">In my research project I investigated the potential of topic modelling on social media to support the identification of refugee needs in near real-time. I collected a significant amount of Twitter data through Twitter’s API and pre-processed using natural language processing library. I used Latent Dirichlet Allocation (LDA) which is a statistical model to identify the latent themes in a collection of data to identify various topics from the tweets. Following the extraction of the topics using LDA topic modelling, it became clear which fundamental topics were being discussed in the collection of tweets. The findings of this research can also be used to highlight which groups of people require the most assistance.</p>
-						</div>
-						<a href="https://github.com/Misbah-Rizaee/Research-Project"><button class="container5-button">See the code &raquo;</button></a>
-					</div>
-
-					<div class='container5-columns'>
-						<div class="column-content">
-							<h5>Autonomous IoT-based Sorting Machine</h5>
-							<p style="text-align:justify;">In this project, we intended to prototype a sorting machine which is fully autonomous using IoT. This Project comprises a rotating conveyor belt. Its movement is executed using an ESP32-WROOM-32 microcontroller that pauses and resumes a DC motor attached to the belt. We have used the ESP32-S2-Kaluga-1 Kit v1.3 which has a ESP- LyraP-CAM, which functioned as our main sensor, and an ESP32-S2-WROVER microcontroller, which we used to transmit the captured image of the packages to the cloud. We have also used an ultrasonic sensor to sense the arrival of a new package so we can pause the conveyor belt and let the cloud communication and colour detection happen.</p>
-						</div>
-						<a href="https://github.com/Misbah-Rizaee/IoT-Sorting-Machine-Project"><button class="container5-button">See the code &raquo;</button></a>
-					</div>
-
-					<div class='container5-columns'>
-						<div class="column-content">
-							<h5>Predicting Fire Brigade Notional Price</h5>
-							<p style="text-align:justify;">London Fire Brigade is forced to allocate a large number of fire-fighters as well as pumps around London on a daily basis. This is a time-consuming process for the LFB1, as well as a real grapple for fire-fighters. In this project, we focused on working with the LFB's large dataset to understand what features might influence the price of such service and how the notional price could be predicted using a machine learning method that works best with our dataset. Since the data pattern is linear, we noticed that, linear regressors are the most accurate predictors and they outperform other regressors. It can be concluded that in such service, the number of hours in which the pump will be on directly determines the price.</p>
-						</div>
-						<a href="https://github.com/Misbah-Rizaee/Machine-Learning-Project"><button class="container5-button">See the code &raquo;</button></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="footer" id="contact">	
-			<div class="container6">
-				<h6>Contact Me</h6>
-				<div class="container6-row">
-					<!-- <form action="mailto:misbah.rizaee@gmail.com" method="post" enctype="text/plain"> -->
-					<form id="contactForm">
-						<input type="text" name="name" class="feedback-input" placeholder="Name"/>
-						<input type="email" name="email" class="feedback-input" placeholder="Email"/>
-						<textarea name="comment" class="feedback-input" placeholder="Comment"></textarea>
-						<input type="submit" value="Send">
-					</form>					
-				</div>
-			</div>
-			<hr size="1" style="width: 90%;">
-			<div class="social-icons">
-				<a class="fa fa-github" href=""></a>
-				<a class="fa fa-linkedin" href="https://www.linkedin.com/in/misbah-rizaee"></a>
-				<a class="fa fa-instagram" href="https://www.instagram.com/misbah_rizaee/?hl=en"></a>
-			</div>
-			<p>© Misbah Rizaee 2019</p>
-		</div>	
-	</body> 
+        function loadHTML(file, id) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data)
+                .catch(error => console.error('Error loading file:', error));
+        }
+    </script>
+</body>
 </html>

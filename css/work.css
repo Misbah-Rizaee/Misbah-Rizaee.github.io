@@ -1,0 +1,51 @@
+.container5 {
+	width: 100%;
+	height:auto;
+	padding-top:30px;
+	padding-bottom:30px;
+	text-align:center;
+	background-color: white;
+}
+
+.container5-row {
+	width: 90%;
+	margin: auto;
+	margin-left:auto;
+	margin-right:auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container5-columns {
+	width: 33.33%;
+	padding-top: 30px;
+	text-align: center;
+	display: flex; /* Use flexbox to align items vertically */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Align items with space between them */
+}
+
+@media screen and (max-width: 1010px) {
+	.container5-columns {
+		width: 100%;
+	}
+}
+
+/* Mywork button */
+.container5-button {
+	background-color: #17252a;
+	border: 1px solid #17252a;
+	color: white;
+	padding: 15px 32px;
+	text-decoration: none;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.container5-button:hover {
+	color: #17252a;
+	background-color: white;
+	transition-duration: 0.4s;
+}

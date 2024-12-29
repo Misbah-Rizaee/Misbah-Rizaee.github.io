@@ -1,0 +1,99 @@
+#footer {
+	padding-top:30px;
+	padding-bottom:30px;
+	
+	width: 100%;
+	background-color: #17252a;
+	color: white;
+}
+
+
+/*---------- container6 -----------*/
+.container6 {
+    width: 100%;
+	height: auto;
+	text-align:center;
+}
+
+.container6-row {
+	width:50%;
+	padding-bottom:30px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+/* contact form */
+.feedback-input {
+	color: white;
+	background-color: transparent;
+	border: 1px solid white;
+	padding: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+	outline: 0;
+	resize: none;
+}
+
+::placeholder{
+	color: white;
+}
+
+[type="submit"] {
+	width: 100%;
+	background-color: white;
+	border: 1px solid white;
+	cursor: pointer;
+	color: #17252a;
+	padding: 10px 0 10px;
+}
+
+[type="submit"]:hover {
+	color: white;
+	border: 1px solid white;
+	background-color: #17252a;
+	transition-duration: 0.4s;
+}
+
+/* icons */
+.fa-instagram {
+	font-size: var(--step-1);
+	padding:10px 6px;
+	margin:10px;
+	transition: .5s;
+	text-decoration: none;
+	color:white;
+}
+
+.fa-instagram:hover {
+	transform: scale(1.50);
+	transition-duration: 0.4s;
+}
+
+.fa-github {
+	font-size: var(--step-1);
+	padding:10px 6px;
+	margin:10px;
+	transition: .5s;
+	text-decoration: none;
+	color:white;
+}
+
+.fa-github:hover {
+	transform: scale(1.50);
+	transition-duration: 0.4s;
+}
+
+.fa-linkedin {
+	font-size: var(--step-1);
+	padding:10px 6px;
+	margin:10px;
+	transition: .5s;
+	text-decoration: none;
+	color:white;
+}
+
+.fa-linkedin:hover {
+	transform: scale(1.50);
+	transition-duration: 0.4s;
+}
