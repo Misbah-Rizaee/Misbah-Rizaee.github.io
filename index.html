@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Misbah Rizaee</title>
 
+    <!-- Metadata -->
     <meta name="description" content="This is Misbah Rizaee's personal website!" />
     <meta name="keywords" content="Misbah, Rizaee, .com, Ireland" />
-    <meta name="Author" content="Misbah Rizaee" />
+    <meta name="author" content="Misbah Rizaee" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="image/png" href="img/icon.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="img/icon.png" sizes="32x32" />
+    <!-- Favicon -->
+    <link rel="icon" href="img/icon.png" sizes="16x16" />
+    <link rel="icon" href="img/icon.png" sizes="32x32" />
 
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/styles.css" />
-    
+
+    <!-- JavaScript -->
     <script type="module" src="js/script.js"></script>
 </head>
 <body>
@@ -24,32 +28,5 @@
     <div id="experience"></div>
     <div id="work"></div>
     <div id="footer"></div>
-
-    <script>
-        // Load all content dynamically
-        const loadContentPromises = [
-            loadHTML("partials/header.html", "header"),
-            loadHTML("partials/about.html", "about"),
-            loadHTML("partials/skills.html", "skills"),
-            loadHTML("partials/otherSkills.html", "otherSkills"),
-            loadHTML("partials/experience.html", "experience"),
-            loadHTML("partials/work.html", "work"),
-            loadHTML("partials/footer.html", "footer")
-        ];
-
-        // Ensure all content is loaded before dispatching the event
-        Promise.all(loadContentPromises).then(() => {
-            document.dispatchEvent(new Event("allContentLoaded"));
-        });
-
-        function loadHTML(file, id) {
-            return fetch(file)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById(id).innerHTML = data;
-                })
-                .catch(error => console.error('Error loading file:', error));
-        }
-    </script>
 </body>
 </html>

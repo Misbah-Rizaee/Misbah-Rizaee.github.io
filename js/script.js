@@ -1,33 +1,23 @@
-// Import functions from other JS files
-import { openNav, closeNav } from './navigation.js';
-import { scrollAppear, scrollColor } from './animations.js';
-import { submitForm } from './form.js';
+// Import other JavaScript modules
+import { setupNavigation } from "./navigation.js";
+import { initAnimations } from "./animations.js";
+import { setupFormHandlers } from "./form.js";
+import { loadContent } from "./loadContent.js";
 
-// Expose functions to the global scope
-window.openNav = openNav;
-window.closeNav = closeNav;
+// Main initialization function
+function init() {
+    // Load dynamic content first
+    loadContent().then(() => {
+        console.log("Content loaded");
 
-// Listen for the "allContentLoaded" event to ensure all dynamic content is available
-document.addEventListener("allContentLoaded", function () {
-    // Add event listeners for scroll effects
-    window.addEventListener('scroll', scrollAppear);
-    window.addEventListener('scroll', scrollColor);
+        // Once content is loaded, initialize other modules
+        setupNavigation();
+        initAnimations();
+        setupFormHandlers();
+    });
 
-    // Add the form submission event listener
-    document.getElementById('contactForm').addEventListener('submit', submitForm);
+    console.log("Website initialized.");
+}
 
-    // // Attach the click event to open/close side navigation
-    // const openNavButton = document.getElementById("myTopnav")?.querySelector(".icon");
-    // if (openNavButton) {
-    //     openNavButton.onclick = function () {
-    //         openNav();
-    //     };
-    // }
-
-    // const closeNavButton = document.getElementById("mySidenav")?.querySelector(".closebtn");
-    // if (closeNavButton) {
-    //     closeNavButton.onclick = function () {
-    //         closeNav();
-    //     };
-    // }
-});
+// Run the initialization when the DOM is ready
+document.addEventListener("DOMContentLoaded", init);
