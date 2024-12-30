@@ -1,5 +1,3 @@
-// animations.js
-
 export function scrollAppear() {
     const rows = document.querySelectorAll('.container4-row'); // Select all rows
 
