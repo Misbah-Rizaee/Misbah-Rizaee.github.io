@@ -6,79 +6,8 @@
 @import url("work.css");
 @import url("footer.css");
 
-
+/* Imports for global styles and fonts */
+@import url("variables.css");
+@import url("typography.css");
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Karla:700,700italic);
-
-* {
-	box-sizing: border-box;
-}
-
-body {
-	font-family: "Karla", Helvetica, Arial, sans-serif;
-	margin:0;
-	color:black; 
-	text-align:center;
-}
-
-:root {
-  --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
-  --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
-  --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
-  --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
-  --step-2: clamp(1.62rem, calc(1.50rem + 0.58vw), 1.95rem);
-  --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
-  --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
-  --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
-}
-
-/* Add -webkit-text-size-adjust property to adjust text size */
-h1, h2, h3, h4, h5, h6, p, a {
-  -webkit-text-size-adjust: 100%;
-}
-
-h1 {
-	font-size: var(--step-5);
-}
-
-h2 {
-	font-size: var(--step-4);
-}
-
-h3 {
-	font-size: var(--step-3);
-}
-
-h4 {
-	font-size: var(--step-2);
-}
-
-h5 {
-	font-size: var(--step-1);
-}
-
-h6 {
-	font-size: var(--step-0);
-}
-
-p {
-	font-size: var(--step--1);
-	margin:20px;
-	line-height: 1.5em;
-}
-
-a {
-	font-size: var(--step--2);
-}
-
-.special-paragraphs {
-	width: 90%;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-@media screen and (max-width: 1010px) {
-	.special-paragraphs {
-		text-align:justify;
-	}
-}
